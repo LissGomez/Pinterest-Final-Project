@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 10px;
+}
+
+.header {
+    height: 60px;
+}
+
+.cards {
+    margin-top: 20px;
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.card {
+    margin: 8px;
+}
+
+.card-img {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card-btn-save {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+    cursor: pointer;
+
+}
+
+.card-btn-save:hover {
+    opacity: 1;
+
+}
+
+.card-btn-save .btn-save {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-btn-save .btn-points {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: none;
+    color: black;
+    cursor: pointer;
+
+
+}
+
+.card-btn-save .btn-share {
+    position: absolute;
+    bottom: 20px;
+    right: 65px;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: none;
+    color: black;
+    cursor: pointer;
+
+
+}
+
+.card-btn-save .btn-category {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 100px;
+}
+
+.btn-share:hover {
+    opacity: 1;
+
+}
+
+.btn-points:hover {
+    opacity: 1;
+
+}
+
+.card-footer {
+    position: relative;
+    right: auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.img-fluid {
+    width: 100%;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.nav-buttons {
+    width: 20%;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.nav-icons {
+    width: 20%;
+}
+
+.btn-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+
+.btn-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+}
+
+.btn-logo a:hover {
+    background-color: rgb(249, 240, 240);
+    border-radius: 50%;
+}
+
+.btn-ini {
+    display: flex;
+    align-items: center;
+}
+
+.btn-ini button {
+
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    color: rgb(249, 244, 244);
+    cursor: pointer;
+
+}
+
+.btn-today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+
+}
+
+.btn-today button {
+    cursor: pointer;
+    border: none;
+    font-size: large;
+    background-color: transparent;
+
+}
+
+.btn-create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+
+}
+
+.btn-create button {
+    cursor: pointer;
+    border: none;
+    font-size: large;
+    background-color: transparent;
+
+}
+
+.nav-icons {
+    width: 15%;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.btn-bell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+
+.btn-bell a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+}
+
+.btn-bell a:hover {
+    background-color: rgb(249, 240, 240);
+    border-radius: 50%;
+}
+
+.btn-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+
+}
+
+.btn-comment a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+}
+
+.btn-comment a:hover {
+    background-color: rgb(249, 240, 240);
+    border-radius: 50%;
+}
+
+.btn-porfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+
+}
+
+.btn-profile a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+
+}
+
+.btn-profile a:hover {
+    background-color: rgb(249, 240, 240);
+    border-radius: 50%;
+
+}
+
+.btn-down-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.btn-down-arrow a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+
+}
+
+.btn-down-arrow a:hover {
+    background-color: rgb(249, 240, 240);
+    border-radius: 50%;
+}
+
+.nav-search {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.txt-search {
+    padding-left: 35px;
+    border: none;
+    width: 100%;
+    height: 70%;
+    border-radius: 25px;
+    background-color: #d9ccccac;
+    position: absolute;
+}
+
+.txt-search:focus {
+    border: 4px solid rgba(0, 132, 255, 0.5);
+    outline-offset: 0px;
+    outline: none;
+    height: 100%;
+}
+
+.nav-search button {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        margin-top: 80px;
+        margin-left: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .nav-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Courier New', Courier, monospace;
+    
+    }
+
+    .nav-search {
+        width: 80%;
+        display: flex;
+        margin: 0px auto;
+        align-items: center;
+        position: relative;
+    }
+
+    .nav-icons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Courier New', Courier, monospace;
+    
+    }
+    
+    .txt-search {
+        padding-left: 35px;
+        border: none;
+        width: 100%;
+        height: 70%;
+        border-radius: 25px;
+        background-color: #d9ccccac;
+        position: absolute;
+    }
+}
