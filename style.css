@@ -17,6 +17,7 @@
     margin-left: 60px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(48, 0.125fr);
 }
 
 .card {
@@ -27,7 +28,173 @@
     position: relative;
     border-radius: 30px;
     overflow: hidden;
+
 }
+
+.item-a {
+    grid-column: 1;
+    grid-row: 1 / 9;
+}
+
+.item-b {
+    grid-column: 2;
+    grid-row: 1 / 6;
+}
+
+.item-c {
+    grid-column: 3;
+    grid-row: 1 / 9;
+}
+
+.item-d {
+    grid-column: 4;
+    grid-row: 1 / 6;
+}
+
+.item-e {
+    grid-column: 5;
+    grid-row: 1 / 8;
+}
+
+.item-f {
+    grid-column: 1;
+    grid-row: 9 / 14;
+}
+
+.item-g {
+    grid-column: 2;
+    grid-row: 6 / 13;
+}
+
+.item-h {
+    grid-column: 3;
+    grid-row: 9 / 17;
+}
+
+.item-i {
+    grid-column: 4;
+    grid-row: 6 / 13;
+}
+
+.item-j {
+    grid-column: 5;
+    grid-row: 8 / 15;
+}
+
+.item-k {
+    grid-column: 1;
+    grid-row: 14 / 22;
+}
+
+.item-l {
+    grid-column: 2;
+    grid-row: 13 / 21;
+}
+
+.item-m {
+    grid-column: 3;
+    grid-row: 17 / 22;
+}
+
+.item-n {
+    grid-column: 4;
+    grid-row: 13 / 20;
+}
+
+.item-o {
+    grid-column: 5;
+    grid-row: 15 / 25;
+}
+
+.item-p {
+    grid-column: 1;
+    grid-row: 22 / 30;
+
+}
+
+.item-q {
+    grid-column: 2;
+    grid-row: 21 / 26;
+
+}
+
+.item-r {
+    grid-column: 3;
+    grid-row: 22 / 29;
+
+}
+
+.item-s {
+    grid-column: 4;
+    grid-row: 20 / 28;
+
+}
+.item-t {
+    grid-column: 5;
+    grid-row: 25 / 30;
+
+}
+
+.item-u {
+    grid-column: 1;
+    grid-row: 30 / 38;
+
+}
+.item-v {
+    grid-column: 2;
+    grid-row: 26 / 31;
+
+}
+
+.item-w {
+    grid-column: 3;
+    grid-row: 29 / 37;
+}
+
+.item-x {
+    grid-column: 4;
+    grid-row: 28 / 35;
+}
+
+.item-y {
+    grid-column: 5;
+    grid-row: 30 / 35;
+}
+
+.item-z {
+    grid-column: 1;
+    grid-row: 38 / 45;
+}
+
+.item-ll {
+    grid-column: 2;
+    grid-row: 31 / 36;
+}
+
+.item-rr {
+    grid-column: 3;
+    grid-row: 37 / 45;
+}
+
+.item-ss {
+    grid-column: 4;
+    grid-row: 35 / 40;
+}
+.item-aa {
+    grid-column: 5;
+    grid-row: 35 / 43;
+}
+
+.item-bb {
+    grid-column: 2;
+    grid-row: 36 / 44;
+}
+.item-cc {
+    grid-column: 4;
+    grid-row: 40 / 45;
+}
+
+
 
 .card-btn-save {
     position: absolute;
@@ -353,7 +520,7 @@ nav {
         flex-direction: column;
         width: 100%;
         height: 100%;
-    
+
     }
 
     .nav-buttons {
@@ -361,7 +528,7 @@ nav {
         display: flex;
         justify-content: space-around;
         font-family: 'Courier New', Courier, monospace;
-    
+
     }
 
     .nav-search {
@@ -377,9 +544,9 @@ nav {
         display: flex;
         justify-content: space-around;
         font-family: 'Courier New', Courier, monospace;
-    
+
     }
-    
+
     .txt-search {
         padding-left: 35px;
         border: none;
